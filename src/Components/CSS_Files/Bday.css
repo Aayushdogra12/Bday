@@ -1,0 +1,50 @@
+.defaultpage {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* /* background-image: url('../files/hbd.gif');   */
+     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+
+.defaultBg{
+    background-image: url('https://j.gifs.com/mwryBn.gif');  
+   
+}
+
+.happyBdayBg{
+    background-image: url('../files/hbd.gif');  
+   
+}
+
+.form-fields{
+    height: 30px;
+    width: 300px;
+}
+
+.form-button{
+height: 30px;
+width: 70px;
+cursor: pointer;
+align-items: center;
+justify-content: center;
+display: flex;
+}
+
+.emailpage{
+    display: flex;
+    /* height: 100vh; */
+    justify-content: center;
+    background:none;
+    background:wheat;
+    /* background-image: url('../files/DP2.jpeg');   */
+    /* background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;  */
+    /* align-items: center; */
+}
+
+
