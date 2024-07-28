@@ -23,7 +23,7 @@ export default function EmailForm() {
 ];
 
    const name='Aayush Dogra'
-   const message='Hello there';
+   const message='First of all happy birthday '+"🤩🤩"+" .I am great to have a friend like you.";
    const to_name='Ayushi Sharma';
 
    
@@ -115,8 +115,6 @@ const handleNextSubmit=(e)=>{
     let feedbackMsg='';
     
 
-  console.log('hejhad ');
-
  Object.keys(textareaValues).forEach((key) => {
   // recieveMsg += `Question ${parseInt(key) + 1}:-\n${textareaValues[key]}\n\n`;
 
@@ -144,7 +142,6 @@ emailjs.send(serviceId,templateId,templateParams,publicKey)
 
       console.log('error sending mail',error);
      })
-window.location.href = '/';
 
 };
   
