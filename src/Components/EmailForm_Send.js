@@ -158,6 +158,8 @@ console.log('Message is: '+ recieveMsg);
 //       console.log('error sending mail',error);
 //      })
 
+window.location.href = 'https://aayushdogra12.github.io/Bday';
+
 };
   
 
