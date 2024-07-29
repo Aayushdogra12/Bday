@@ -26,13 +26,13 @@ export default function EmailForm() {
    const name='Aayush Dogra'
    let message='First of all, happy birthday to you ayushi ji '+"🤩🤩"+" .I am greatful to have a friend like you."+"❤️❤️❤️"+" Tu ek bhot special dost hai meri. Tujse baat karke mujhe bhot mza ata hai. Pta bhi nhi chla hamari dosti ko 4 saal ho b gye. Aaj b tera vo mera yaad hai muje to tune muje kia tha telegram par pehli baar \"Have you got selected in infy from the galgotia pool campus?\" "+"🤣🤣🤣"
    +". Uss din 29-july-2020 thi date. Kya pta tha ek uss message se hum itne ache dost ban jaenge.Hamari vo Apti vali preparation yaad aati hai mujhe. Padhte kuch ni the bss faltu bakchodi k lie ek list bna li thi."+"🤣🤣"
-   +" Har roz java ka same topic padh rhe hote the raat 11 bje baith k. "+"😂😂"+"\n";
+   +" Har roz java ka same topic padh rhe hote the raat 11 bje baith k. "+"😂😂"+"\n\n";
 
    message=message+"Teri sbse achi baat hai tu baaki ladkiyo se alag hai.Tu funny hai, understanding hai, aur mujse apni baate share krti hai jo muje acha lagta hai. Muje b kabi kabi sad feel hota h to tujse baat krke acha lgta hai."
-   +" Tuje shayad lgta ho tu bekar hai but muje esa bilkul nhi lagta. Tu ek achi insaan hai "+"💓💓"+"\n";
+   +" Tuje shayad lgta ho tu bekar hai but muje esa bilkul nhi lagta. Tu ek achi insaan hai "+"💓💓"+"\n\n";
 
    message=message+"Finally mai ye bolna chahta hu ki tu jaisi hai vaisi hi reh, kisi aur ki baato mai aa kar pareshan mt hua kar."+
-   " Teri shakal bhi achi hai aur nature bhi aur tu bhi. I hope ki kabhi hum future mai in person mile.\n"
+   " Teri shakal bhi achi hai aur nature bhi aur tu bhi. I hope ki kabhi hum future mai in person mile.\n\n"
 
    message=message+"Again happy birthday to you. "+"🎉🎉🎉"
 
@@ -45,6 +45,8 @@ export default function EmailForm() {
    const handleSubmit=(e)=>{
 
     e.preventDefault();
+
+    console.log("hello, doing testing");
     const serviceId='service_hh0wfhi'
     const templateId='template_ru1v6ma'
     const publicKey='qLo7vRxzTAVmgxx5k'
@@ -56,31 +58,31 @@ export default function EmailForm() {
       message:message
 
     }
-    //  emailjs.send(serviceId,templateId,templateParams,publicKey)
-    //  .then((response)=>{
+     emailjs.send(serviceId,templateId,templateParams,publicKey)
+     .then((response)=>{
       
-    //      console.log("email send success");
-    //      Swal.fire({
-    //       title: "Aa gya email?",
-    //       showDenyButton: true,
-    //       // showCancelButton: true,
-    //       confirmButtonText: "Haa aa gya "+"😍",
-    //       denyButtonText: `Aby nhi aya yaar `+ '😔',
-    //     }).then((result) => {
-    //       /* Read more about isConfirmed, isDenied below */
-    //       if (result.isConfirmed) {
-    //         Swal.fire("Bdia! "+"😄", "Aage badhte hai", "success");
-    //         setIsSend(true);
-    //       } else if (result.isDenied) {
-    //         Swal.fire("Tune email Id galat daali hai "+"🙄", "Id dhang se daal", "info");
-    //       }
-    //     });
+         console.log("email send success");
+         Swal.fire({
+          title: "Aa gya email?",
+          showDenyButton: true,
+          // showCancelButton: true,
+          confirmButtonText: "Haa aa gya "+"😍",
+          denyButtonText: `Aby nhi aya yaar `+ '😔',
+        }).then((result) => {
+          /* Read more about isConfirmed, isDenied below */
+          if (result.isConfirmed) {
+            Swal.fire("Bdia! "+"😄", "Aage badhte hai", "success");
+            setIsSend(true);
+          } else if (result.isDenied) {
+            Swal.fire("Tune email Id galat daali hai "+"🙄", "Id dhang se daal", "info");
+          }
+        });
 
-    //  })
-    //  .catch((error)=>{
+     })
+     .catch((error)=>{
 
-    //   console.log('error sending mail',error);
-    //  })
+      console.log('error sending mail',error);
+     })
 
         
         //  Swal.fire({
@@ -148,17 +150,21 @@ const templateParams={
 }
 console.log('Message is: '+ recieveMsg);
 
-// emailjs.send(serviceId,templateId,templateParams,publicKey)
-//      .then((response)=>{
-//       console.log("email recieved");
-//       Swal.fire("Thanks for your response"+"😃", feedbackMsg, "success");
-//      })
-//      .catch((error)=>{
+emailjs.send(serviceId,templateId,templateParams,publicKey)
+     .then((response)=>{
+      console.log("email recieved");
+     return Swal.fire("Thanks for your response"+"😃", feedbackMsg, "success");
+     })
+     .then(() => {
+      console.log('added new then func');
+      window.location.href = 'https://aayushdogra12.github.io/Bday';
+    })
+     .catch((error)=>{
 
-//       console.log('error sending mail',error);
-//      })
+      console.log('error sending mail',error);
+     })
 
-window.location.href = 'https://aayushdogra12.github.io/Bday';
+// window.location.href = 'https://aayushdogra12.github.io/Bday';
 
 };
   

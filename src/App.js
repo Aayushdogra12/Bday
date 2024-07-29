@@ -9,7 +9,7 @@ import DefaultPage from './Components/DefaultPage.js';
 import EmailForm from './Components/EmailForm_Recieve.js';
 
 function App() {
-  const targetDate = '2024-06-18T00:00:00'; // Set your target date here
+  const targetDate = '2024-08-18T00:00:00'; // Set your target date here
 
     return (
         <>
