@@ -28,13 +28,17 @@ export default function EmailForm() {
    +". Uss din 29-july-2020 thi date. Kya pta tha ek uss message se hum itne ache dost ban jaenge.Hamari vo Apti vali preparation yaad aati hai mujhe. Padhte kuch ni the bss faltu bakchodi k lie ek list bna li thi."+"🤣🤣"
    +" Har roz java ka same topic padh rhe hote the raat 11 bje baith k. "+"😂😂"+"\n\n";
 
+  message=message+'Ab sochta hu to lgta hai ki acha hua hmari infosys ki joining nhi aayi thi, acha hua humne infosys join ni kri.'+
+  ' Kyuki agr humari joining aa jati to hum join kr lete infosys to hum itne ache dost na ban paate. Hum apni apni life mai busy ho jate. '+
+  'Infosys na join krne ki vja se hi hum aapas mai baate krte the.'+'🤪🤪🤪'+' \n\n';
+
    message=message+"Teri sbse achi baat hai tu baaki ladkiyo se alag hai.Tu funny hai, understanding hai, aur mujse apni baate share krti hai jo muje acha lagta hai. Muje b kabi kabi sad feel hota h to tujse baat krke acha lgta hai."
    +" Tuje shayad lgta ho tu bekar hai but muje esa bilkul nhi lagta. Tu ek achi insaan hai "+"💓💓"+"\n\n";
 
    message=message+"Finally mai ye bolna chahta hu ki tu jaisi hai vaisi hi reh, kisi aur ki baato mai aa kar pareshan mt hua kar."+
-   " Teri shakal bhi achi hai aur nature bhi aur tu bhi. I hope ki kabhi hum future mai in person mile.\n\n"
+   " Teri shakal bhi achi hai aur nature bhi acha hai aur tu bhi achi hai. "+ '❤️❤️❤️ '+"I hope ki kabhi hum future mai in person mile .\n\n"
 
-   message=message+"Again happy birthday to you. "+"🎉🎉🎉"
+   message=message+"Happy birthday to you once again. "+"🎉🎉🎉"+'🥰🥰🥰'+'\n\n'
 
 
    const to_name='Ayushi Sharma';
